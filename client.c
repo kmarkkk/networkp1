@@ -195,6 +195,7 @@ main(int argc, char** argv) {
 		printf("received %d bytes seq=%d time=%.3f\n",
 				total_byte_count, loop_count, res_usec / 1000.0 + res_sec * 1000);
 	}
+	printf("%d seqs send. Avg time=%.3f\n", counter, total_time / counter);
 	if (close(sock) < 0) {
 		perror("Close socket");
 		abort();
