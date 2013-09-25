@@ -114,7 +114,7 @@ main(int argc, char** argv) {
 	int temper_byte_count;
 	int total_byte_count;
 	int fail;
-	int total_time = 0;
+	double total_time = 0.0;
 	/* The size of the data field in network order */
 	unsigned short net_data_size = htons(data_size);
 	while (loop_count < counter) {
