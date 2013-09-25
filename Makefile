@@ -1,6 +1,6 @@
 CC	 	= gcc
 LD	 	= gcc
-CFLAGS	 	= -Wall -g
+CFLAGS	 	= -Wall -Wextra -g
 
 LDFLAGS	 	= 
 DEFS 	 	=
@@ -21,4 +21,5 @@ clean:
 	rm -f core
 	rm -f server
 	rm -f client
+	rm -r *.dSYM
 
